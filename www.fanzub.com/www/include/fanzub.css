@@ -1,0 +1,375 @@
+/* $Id$ */
+
+/* Reset by Eric Meyer */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+body {
+  line-height: 1;
+  color: black;
+}
+ol, ul {
+  margin: 2px 0px;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+}
+
+/* Fanzub - Generic */
+
+body {
+  background-color: #FFFFFF;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 0.8em;
+  text-align: center;
+}
+
+a {
+	color: #4060A0;
+	text-decoration: none;
+}
+a:link {
+	color: #4060A0;
+}
+a:active {
+	color: #4060A0;
+}
+a:visited {
+	color: #4060A0;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+img {
+	vertical-align: text-top;
+}
+
+small {
+	font-size: 0.9em;
+}
+
+input {
+	width: 15em;
+	font-size: 1.2em;
+	margin-right: 5px;
+	vertical-align: middle;
+}
+select {
+	font-size: 1.2em;
+	height: 1.55em;
+	margin-right: 5px;
+	vertical-align: middle;
+}
+button {
+	font-size: 1.2em;
+	vertical-align: middle;
+}
+
+h1 {
+	font-size: 1.8em;
+	font-weight: bold;
+	text-align: center;
+	line-height: 1.5em;
+	width: 960px;
+	margin: 0 auto 25px auto;
+}
+
+dl {
+	text-align: left;
+	line-height: 1.5em;
+	width: 960px;
+	margin: 0 auto;
+}
+dt{
+	background: #F4F4F4;
+	border: solid 1px #D0D0D0;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+	border-radius: 5px;
+	font-weight: bold;
+	padding: 2px 5px;
+}
+dd {
+	margin-bottom: 25px;
+	padding: 5px;
+}
+dd p {
+	margin-bottom: 15px;
+}
+dd p:last-child {
+	margin-bottom: 0px;
+}
+dd small {
+	font-size: 0.7em;
+}
+
+.center {
+	text-align: center;
+	margin: auto;
+}
+
+.fullheight {
+	height: 100%;
+}
+
+.warning {
+	color: #990000;
+}
+
+/* Fanzub - Layout */
+
+#container {
+	margin: 0px;
+	padding: 20px 20px 10px 20px;
+}
+
+#splash {
+	margin: 10% auto 0 auto;
+}
+#splash #logo {
+	margin: 35px;
+	font-family: tahoma, verdana, arial, helvetica, sans-serif;
+}
+#splash #logo.small {
+	padding: 3px;
+}
+#splash #searchbox
+{
+	background-color: #F4F4F4;
+	border: solid 1px #D0D0D0;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+	border-radius: 5px;
+	width: 33em;
+	margin: auto;
+	padding: 15px;
+}
+#splash #menu {
+	margin: 35px;
+}
+
+#header {
+	background-color: #F4F4F4;
+	border: solid 1px #D0D0D0;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+	border-radius: 5px;
+	text-align: left;
+	margin-bottom: 1.8em;
+	padding: 10px 10px 8px 10px;
+}
+#header #logo {
+	margin: -8px 15px 8px -3px;
+	padding: 0px;
+	float: left;
+}
+#header #menu {
+	padding: 6px;
+	float: right;
+}
+
+#searchbox img {
+	padding: 2px 5px 2px 5px;
+}
+
+#footer {
+	color: #808080;
+	font-size: 0.85em;
+	line-height: 1.3em;
+	text-align: center;
+	width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+	padding: 5px;
+}
+
+.fanzub {
+  background-color: #FFFFFF;
+	border: solid 1px #D0D0D0;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+	border-radius: 5px;
+  width: 100%;
+	margin: auto;
+}
+.fanzub tr td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  padding: 2px;
+}
+.fanzub .first td {
+  border-top: none;
+}
+.fanzub .top td {
+	width: 6%;
+  font-size: 10pt;
+	text-align: center;
+	vertical-align: middle;
+  padding: 3px 2px 2px 2px;
+}
+.fanzub .top input {
+	display: none;
+}
+.fanzub .top a:link {
+  color: #0000FF;
+  text-decoration: none;
+}
+.fanzub .top a:active {
+  color: #AA0000;
+  text-decoration: underline;
+}
+.fanzub .top a:visited {
+  color: #440088;
+  text-decoration: underline;
+}
+.fanzub .top a:hover {
+  color: #FF0000;
+  text-decoration: underline;
+}
+.fanzub .bottom td {
+	color: #A0A0A0;
+  font-size: 8pt;
+  text-align: left;
+  padding: 3px 3px 3px 3px;
+  white-space: nowrap;
+}
+.fanzub .bottom a {
+  color: teal;
+  text-decoration: underline;
+}
+.fanzub .shade {
+  background-color: #F4F4F4;
+}
+.fanzub .selected {
+	background-color: #FFCC99;
+}
+.fanzub .selected:hover {
+	background-color: #FFCC99;
+}
+.fanzub .top td.file {
+	width: 80%;
+  text-align: left;
+  vertical-align: middle;
+}
+.fanzub .top td.age {
+	width: 5%;
+}
+.fanzub .nomatch td {
+	color: #990000;
+	text-align: center;
+	padding: 15px;
+}
+
+.details {
+	display: none;
+	margin: 8px 2px;
+}
+.details table {
+	font-family: arial, helvetica, sans-serif;
+	border-bottom: solid 1px #D0D0D0;
+	border-right: solid 1px #D0D0D0;
+	width: 100%;
+	vertical-align: middle;
+}
+.details th {
+	font-family: arial, helvetica, sans-serif;
+	background-color: #E4E4E4;
+	border-top: solid 1px #D0D0D0;
+	border-left: solid 1px #D0D0D0;
+	font-size: 0.9em;
+	font-weight: bold;
+	text-align: center;
+	padding: 1px 3px;
+}
+.details td {
+	border-top: solid 1px #D0D0D0;
+	border-left: solid 1px #D0D0D0;
+}
+.details table td.split {
+	font-family: arial, helvetica, sans-serif;
+	text-align: center;
+	width: 50%;
+	vertical-align: middle;
+}
+.details table td.date {
+	font-family: arial, helvetica, sans-serif;
+	text-align: center;
+	vertical-align: middle;
+}
+.details table td.subject {
+	font-family: arial, helvetica, sans-serif;
+	white-space: normal;
+	width: 80%;
+	vertical-align: middle;
+}
+.details table td.parts {
+	font-family: arial, helvetica, sans-serif;
+	text-align: center;
+	vertical-align: middle;
+}
+.details table td.size {
+	font-family: arial, helvetica, sans-serif;
+	text-align: right;
+	vertical-align: middle;
+}
+.details a:link {
+	color: #808080;
+}
+.details a:active {
+	color: #808080;
+}
+.details a:visited {
+	color: #808080;
+}
+
+.nav {
+  width: 100%;
+	margin: auto;
+	padding-top: 5px;
+}
+.nav td {
+	padding: 5px;
+	width: 33%;
+}
+
+.paginator a, .paginator span {
+  background-color: #FFFFFF;
+	border: solid 1px #D0D0D0;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+	border-radius: 3px;
+	padding: 5px 10px;
+	margin: 0px 1px;
+}
+.paginator a:hover {
+  background-color: #F4F4F4;
+	border: solid 1px #808080;
+	text-decoration: none;
+}
+.paginator .current {
+  background-color: #F4F4F4;
+	font-weight: bold;
+}
+.paginator span.inactive {
+	border: solid 1px #D0D0D0;
+	color: #808080;
+}
+.paginator span.inactive:hover {
+	background-color: #FFFFFF;
+	border: solid 1px #D0D0D0;
+	text-decoration: none;
+}

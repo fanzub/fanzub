@@ -1,0 +1,40 @@
+-- $Id$
+
+CREATE TABLE posts (
+  id INTEGER UNSIGNED NOT NULL PRIMARY KEY AUTO_INCREMENT,
+  subject VARCHAR(2000) NOT NULL,
+  authorid INTEGER UNSIGNED NOT NULL,
+  files INTEGER UNSIGNED NOT NULL,
+  size BIGINT UNSIGNED NOT NULL,
+  parts_total INTEGER UNSIGNED NOT NULL,
+  parts_found INTEGER UNSIGNED NOT NULL,
+	stats VARCHAR(1000) NOT NULL,
+  post_date INTEGER UNSIGNED NOT NULL,
+	hidden TINYINT UNSIGNED NOT NULL,
+  created INTEGER UNSIGNED NOT NULL,
+  updated INTEGER UNSIGNED NOT NULL,
+  INDEX(subject(100)),
+  INDEX(authorid),
+  INDEX(post_date),
+  INDEX(created)
+);
+
+CREATE TABLE postgroup (
+  postid INTEGER UNSIGNED NOT NULL,
+  groupid INTEGER UNSIGNED NOT NULL,
+  created INTEGER UNSIGNED NOT NULL,
+  PRIMARY KEY(postid,groupid),
+  INDEX(groupid,created)
+);
+
+CREATE TABLE postcat (
+  catid TINYINT UNSIGNED NOT NULL,
+	postid INTEGER UNSIGNED NOT NULL,
+  primarycat TINYINT UNSIGNED NOT NULL,
+	post_date INTEGER UNSIGNED NOT NULL,
+	nzb_date INTEGER UNSIGNED NOT NULL,
+	updated INTEGER UNSIGNED NOT NULL,
+	UNIQUE postcat (postid,catid),
+	INDEX(catid,post_date),
+	INDEX(primarycat,post_date)
+);

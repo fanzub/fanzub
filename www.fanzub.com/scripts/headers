@@ -1,0 +1,7 @@
+#!/bin/sh
+
+cd /home/fanzub/www.fanzub.com/www/
+
+/usr/bin/nice -19 /usr/bin/php -f cron.php headers $1  > /home/fanzub/www.fanzub.com/www/logs/headers-$1.html
+/usr/bin/nice -19 /usr/bin/php -f cron.php posts > /home/fanzub/www.fanzub.com/www/logs/posts.html
+/usr/bin/nice -19 /usr/bin/php -f cron.php nzb > /home/fanzub/www.fanzub.com/www/logs/nzb.html
