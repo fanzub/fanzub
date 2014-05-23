@@ -26,9 +26,9 @@ To get this code working you need some experience as a (PHP) web developer and L
   If you want index new posts you'll need one or more Usenet providers to download headers from. I used four: [Hitnews](http://www.hitnews.com/), [Astraweb](http://www.news.astraweb.com/), [Giganews](http://www.giganews.com/) and [Newshosting](http://www.newshosting.com/). You can certainly use less (even just one) if you want. Out of the four Astraweb might be a good choice as they offer block accounts which means you don't need to pay a monthly subscription (and headers typically don't count towards your download limit). The configuration file for the servers is *lib/usenet.ini.php*
   
 * **File permissions**  
-  The following folders (and contents) need to be writeable by the same user as the webserver (on Debian/Ubuntu this is the "www-data" user):
-  *www.fanzub.com/data/*
-  *www.fanzub.com/www/logs/*
+  The following folders (and contents) need to be writeable by the same user as the webserver (on Debian/Ubuntu this is the "www-data" user):  
+  *www.fanzub.com/data/*  
+  *www.fanzub.com/www/logs/*  
   
 * **PHP exceptions**   
   Exceptions are stored in a small SQLite database in *www.fanzub.com/data/journal.db*. Make sure this file exists and is writeable by the webserver. You can create the database using the *journal.sql* file from the *sql/* folder:
