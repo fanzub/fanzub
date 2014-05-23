@@ -31,7 +31,7 @@ To get this code working you need some experience as a (PHP) web developer and L
   *www/logs/*  
   
 * **PHP exceptions**   
-  Exceptions are stored in a small SQLite database in *www.fanzub.com/data/journal.db*. Make sure this file exists and is writeable by the webserver. You can create the database using the *journal.sql* file from the *sql/* folder:   
+  Exceptions are stored in a small SQLite database in *www.fanzub.com/data/journal.db*. Make sure this file exists and is writeable by the webserver. You can create the database using the *journal.sql* file:   
   *sqlite3 journal.db < ../sql/journal.sql*
   
 * **Cron jobs**   
