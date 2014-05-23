@@ -43,4 +43,5 @@ To get this code working you need some experience as a (PHP) web developer and L
   As mentioned before, please note that the database is huge. You'll need at least 20~25 GB free space to restore it (which will take a while).
   
 ### Questions
-If you have any questions you can ask them here: http://forums.animesuki.com/showthread.php?t=81306 I can give no guarantee I'll reply in a timely fashion.
+If you have any questions you can ask them here: http://forums.animesuki.com/showthread.php?t=81306
+I can not guarantee I'll reply in a timely fashion.
