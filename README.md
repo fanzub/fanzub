@@ -27,11 +27,11 @@ To get this code working you need some experience as a (PHP) web developer and L
   
 * **File permissions**  
   The following folders (and contents) need to be writeable by the same user as the webserver (on Debian/Ubuntu this is the "www-data" user):  
-  *www.fanzub.com/data/*  
-  *www.fanzub.com/www/logs/*  
+  *data/*  
+  *www/logs/*  
   
 * **PHP exceptions**   
-  Exceptions are stored in a small SQLite database in *www.fanzub.com/data/journal.db*. Make sure this file exists and is writeable by the webserver. You can create the database using the *journal.sql* file from the *sql/* folder:
+  Exceptions are stored in a small SQLite database in *www.fanzub.com/data/journal.db*. Make sure this file exists and is writeable by the webserver. You can create the database using the *journal.sql* file from the *sql/* folder:   
   *sqlite3 journal.db < ../sql/journal.sql*
   
 * **Cron jobs**   
