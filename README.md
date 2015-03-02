@@ -13,7 +13,7 @@ To get this code working you need some experience as a (PHP) web developer and L
 * Memcached
 * Sphinx Search
 * Adequate versions of above software are included with Ubuntu 12.04 LTS, newer software will probably work too (no guarantees)
-* The database is approximately 10 GB and has a table with 10 million rows. You probably don't want to try to host the site on shared hosting, use at least a VPS instead with enough space for both the SQL dump and the restored database.
+* The database dump is approximately 10 GB and has a table with 10 million rows. You probably don't want to try to host the site on shared hosting, use at least a VPS instead with enough space for both the SQL dump and the restored database.
 
 ### Configuration
 * **Apache**  
@@ -40,4 +40,4 @@ To get this code working you need some experience as a (PHP) web developer and L
 * **Database**  
   The database schema can be found in *sql/fanzub-schema.sql*. The database data dump can be downloaded from: [https://fanzub.com/dump/](https://fanzub.com/dump/). The data dump contains all tables *except* the "downloads" table, which is related to a feature I never finished and contains hashed IP addresses (hence why I'm not including it). To prevent errors you might first want to restore the *fanzub-schema.sql* file before restoring the data dump so that your database will include an empty "downloads" table.
   
-  As mentioned before, please note that the database is huge. You'll need at least 20~25 GB free space to restore it (which will take a while).
+  As mentioned before, please note that the database is huge. You'll need at least 30~50 GB free space to restore it (which will take a while).
