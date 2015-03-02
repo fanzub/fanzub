@@ -41,8 +41,3 @@ To get this code working you need some experience as a (PHP) web developer and L
   The database schema can be found in *sql/fanzub-schema.sql*. The database data dump can be downloaded from: [https://fanzub.com/dump/](https://fanzub.com/dump/). The data dump contains all tables *except* the "downloads" table, which is related to a feature I never finished and contains hashed IP addresses (hence why I'm not including it). To prevent errors you might first want to restore the *fanzub-schema.sql* file before restoring the data dump so that your database will include an empty "downloads" table.
   
   As mentioned before, please note that the database is huge. You'll need at least 20~25 GB free space to restore it (which will take a while).
-  
-### Questions
-If you have any questions you can ask them here: http://forums.animesuki.com/showthread.php?t=81306
-
-I can not guarantee I'll reply in a timely fashion.
